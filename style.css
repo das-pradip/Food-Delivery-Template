@@ -1,0 +1,297 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Logo and Image */
+#logo {
+    margin: 10px 45px;
+}
+
+#logo img {
+    height: 24px;
+    margin: -3px -34px;
+}
+
+/* List Styling */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: #fdfbff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(20, 20, 20);
+    background-color: white;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 209px;
+    height: 395px;
+    justify-content: center;
+    align-items: center;
+}
+
+ #home::before {
+    content: "";
+    background: url('../food\ bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px; 
+    left: 0px;
+}
+
+#home h1 {
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: rgb(26, 230, 213);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* services-section */
+#services {
+    margin: 34px;
+    display: flex;
+    /* width: 553px; */
+    padding: 38px;
+    margin: 97px;
+    
+}
+
+#services .box {
+    border: 2px solid rgb(55, 224, 40);
+    width: 933px;
+    padding: 26px;
+    margin: 3px 8px;
+    border-radius: 28px;
+    background-color: cadetblue;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+
+ section #service{
+    font-size: 53px;
+    height: 23px;
+}
+ 
+
+/* Contact Section */
+#contact{
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    /* background:url('../contactus.jpg') no-repeat center center/cover; */
+}
+
+ #contact-box::before{ 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    /* background: url('../contactus.jpg') no-repeat center center/cover; */
+} 
+
+/* Utility Classes */
+/* .h-primary center {
+     height: 533px; 
+     padding: 13px;sss 
+     font-size: 555px; 
+     font-size: 2.8rem; 
+} */
+/* client section */
+#client-section{
+height:215px;
+width: 100%;
+font-size: 33px;
+/* position: relative; */
+}
+
+ .client-item::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    z-index: -1;
+    opacity: 0.7;
+   
+} 
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 94px;
+}
+#contact{
+    padding: 20px;
+    margin: 2px 2px;
+    width: 97%;
+    position: relative;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+.h-primary center{
+    margin: 2px 3px;
+    padding: 1px 1px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ .primary center{
+
+    font-size: 3rem;
+}
+
+/* #service{
+    
+    font-size: 2rem;
+} */
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+/* .form-group{
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    padding: 10px; 
+    
+}*/
+/* .form-group input{
+    
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+} */
+/* #contact-box::before{
+    position: absolute;
+    width: 100%;
+    background: url('../contactus.jpg') no-repeat center center/cover;
+} */
+ #contact-box{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    /* width: 100%; */
+     color: blue; 
+}
+#contact-box form{
+    width: 34%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    /* display: flex; */
+    /* position: absolute; */
+    text-align: center;
+width:90%;
+padding: 0.3rem;
+color: blue;
+border-radius: 25px;
+
+}
+
+#center{
+    background: black;
+    color: white;
+    padding:  0px;
+
+    text-align: center;
+    /* margin:  7px; */
+    /* padding-bottom: 0%; */
+    /* width: 100%; */
+    position: relative;
+    text-align: center;
+}
